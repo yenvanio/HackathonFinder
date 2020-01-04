@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.shiv.hackerscalendar.AddActivity"
+        android:orientation="vertical"
+        tools:showIn="@layout/activity_add"
+        android:weightSum="13">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Enter Title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name of Hackathon"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:textAlignment="textEnd"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/titleText" />
+        </RelativeLayout>   <!--Title-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/dateText"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_event_black_24dp"
+                android:tint="@color/White"
+                android:textColor="@color/White"
+                app:backgroundTint="@color/colorPrimary"
+                android:text="Choose Date"
+                android:clickable="true"
+                android:id="@+id/date"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>   <!--Date-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="City, Country"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:id="@+id/place"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/placeIcon"
+                android:textAlignment="textEnd" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/placeIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/place"
+                android:tint="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Place-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:textAlignment="textEnd"
+                android:hint="Duration of Event"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/timeIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/timeIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/clock"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Duration-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/link"
+                android:textAlignment="textEnd"
+                android:hint="Link to Website"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/linkIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/linkIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/link"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--URL-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/host"
+                android:textAlignment="textEnd"
+                android:hint="Host of Event"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/hostIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/hostIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/host"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Host-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prizes"
+                android:textAlignment="textEnd"
+                android:hint="Are there prizes?"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/prizeIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/prizeIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/prizes"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Prizes-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost"
+                android:textAlignment="textEnd"
+                android:hint="How much is the entrance fee?"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/costIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/costIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/money"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Cost-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/travel"
+                android:textAlignment="textEnd"
+                android:hint="Are there Travel Reimbursments?"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/travelIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/travelIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/travel"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Travel-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/highschool"
+                android:textAlignment="textEnd"
+                android:hint="Are highschoolers allowed?"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/highschoolIcon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/highschoolIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/highschool"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>   <!--Highschool-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/twitterIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/twitter"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/twitter"
+                android:textAlignment="textEnd"
+                android:layout_alignParentEnd="true"
+                android:hint="Link to Twitter Page"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:layout_toEndOf="@id/twitterIcon"
+                android:inputType="textCapSentences|textAutoCorrect" />
+
+        </RelativeLayout>   <!--Twitter-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/googleIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/google"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/google"
+                android:textAlignment="textEnd"
+                android:layout_alignParentEnd="true"
+                android:hint="Link to Google + Page"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:layout_toEndOf="@id/googleIcon"
+                android:inputType="textCapSentences|textAutoCorrect" />
+
+        </RelativeLayout>   <!--Google-->
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/facebookIcon"
+                android:layout_height="30dp"
+                android:src="@mipmap/facebook"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebook"
+                android:layout_toEndOf="@id/facebookIcon"
+                android:textAlignment="textEnd"
+                android:hint="Link to Facebook Page"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/colorPrimary"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>   <!--Facebook-->
+
+    </LinearLayout>
+
+</ScrollView>

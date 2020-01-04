@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:padding="16dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Hack MTY"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:singleLine="true"
+            autofit:minTextSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text="August 27th - August 28th"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/place"
+            android:gravity="center_vertical"
+            android:text="Monterrey, MX"
+            android:layout_alignBottom="@+id/placeIcon"
+            android:layout_toEndOf="@+id/placeIcon" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/placeIcon"
+            android:layout_height="20dp"
+            android:src="@mipmap/place"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="12 hours"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@+id/timeIcon"
+            android:layout_alignStart="@+id/place" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/timeIcon"
+            android:layout_height="20dp"
+            android:src="@mipmap/clock"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/place"
+            android:layout_toStartOf="@+id/linkIcon"
+            android:layout_alignEnd="@+id/placeIcon" />
+
+        <TextView
+            android:singleLine="true"
+            autofit:minTextSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/link"
+            android:text="Website"
+            android:autoLink="web"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/time" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/linkIcon"
+            android:layout_height="20dp"
+            android:src="@mipmap/link"
+            android:layout_alignTop="@+id/link"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/share"
+            android:id="@+id/share"
+            android:layout_alignTop="@+id/name"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_favorite_border_gray_24dp"
+            android:id="@+id/fav"
+            android:layout_below="@+id/share"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

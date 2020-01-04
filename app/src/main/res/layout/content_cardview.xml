@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.shiv.hackerscalendar.CardViewActivity"
+        tools:showIn="@layout/activity_cardview">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITlE"
+            android:textSize="20sp"
+            android:id="@+id/title"
+            android:layout_marginTop="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE - DATE"
+            android:textSize="18sp"
+            android:id="@+id/date"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/place"
+            android:gravity="center_vertical"
+            android:text="Monterrey, MX"
+            android:paddingBottom="6dp"
+            android:layout_alignBottom="@+id/placeIcon"
+            android:layout_alignStart="@+id/time" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/placeIcon"
+            android:layout_height="30dp"
+            android:src="@mipmap/place"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/date"
+            android:layout_toStartOf="@+id/highschool" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="12 hours"
+            android:paddingBottom="6dp"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@+id/timeIcon"
+            android:layout_alignStart="@+id/link" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/timeIcon"
+            android:layout_height="30dp"
+            android:src="@mipmap/clock"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/place"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/link"
+            android:text="Website"
+            android:singleLine="true"
+            android:autoLink="web"
+            android:paddingBottom="6dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/time"
+            android:layout_alignStart="@+id/host" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/linkIcon"
+            android:layout_height="30dp"
+            android:src="@mipmap/link"
+            android:layout_alignBottom="@+id/link"
+            android:layout_alignParentStart="true" />
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/addCalendar"
+            android:layout_height="30dp"
+            android:src="@mipmap/calendar"
+            android:layout_alignTop="@+id/title"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Host"
+            android:id="@+id/host"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/link"
+            android:layout_alignStart="@+id/cost" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/host"
+            android:id="@+id/hostIcon"
+            android:layout_alignBottom="@+id/host"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prizes"
+            android:paddingBottom="6dp"
+            android:id="@+id/prizes"
+            android:layout_below="@+id/host"
+            android:layout_alignStart="@+id/host"
+            android:layout_marginTop="27dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/prizes"
+            android:id="@+id/prizeIcon"
+            android:layout_above="@+id/cost"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:paddingBottom="6dp"
+            android:id="@+id/cost"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/prizes"
+            android:layout_alignStart="@+id/travel" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/money"
+            android:id="@+id/costIcon"
+            android:layout_alignBottom="@+id/cost"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel"
+            android:paddingBottom="6dp"
+            android:id="@+id/travel"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/cost"
+            android:layout_alignStart="@+id/highschool" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/travel"
+            android:id="@+id/travelIcon"
+            android:layout_above="@+id/highschoolIcon"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hs"
+            android:id="@+id/highschool"
+            android:paddingBottom="6dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignBottom="@+id/highschoolIcon"
+            android:layout_toEndOf="@+id/highschoolIcon" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/highschool"
+            android:id="@+id/highschoolIcon"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/travel"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:id="@+id/google"
+            android:layout_marginTop="22dp"
+            android:autoLink="web"
+            android:singleLine="true"
+            android:paddingBottom="6dp"
+            android:layout_below="@+id/twitter"
+            android:layout_alignStart="@+id/twitter" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/google"
+            android:id="@+id/googleIcon"
+            android:layout_alignBottom="@+id/google"
+            android:layout_toStartOf="@+id/highschool" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="twitter"
+            android:singleLine="true"
+            android:id="@+id/twitter"
+            android:autoLink="web"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/highschool"
+            android:layout_alignStart="@+id/highschool" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/twitter"
+            android:id="@+id/twitterIcon"
+            android:layout_alignBottom="@+id/twitter"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/facebook"
+            android:paddingBottom="6dp"
+            android:autoLink="web"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/facebookIcon"
+            android:layout_alignStart="@+id/google" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/facebook"
+            android:id="@+id/facebookIcon"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/googleIcon"
+            android:layout_alignEnd="@+id/googleIcon"
+            android:layout_marginEnd="6dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
