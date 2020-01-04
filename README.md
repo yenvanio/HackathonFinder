@@ -10,9 +10,9 @@ Android App to display upcoming Hackathons in North America
 <td colspan="1" align = "center"> Searching for Hackathons </td>
 </tr>  
 <tr> 
-<td> <img src="https://github.com/yenvanio/Hackathon-Finder/blob/master/loadEventsFirst.gif" /> </td>
-<td> <img src="https://github.com/yenvanio/Hackathon-Finder/blob/master/event_detail_calendar.gif" /> </td> 
-<td> <img src="https://github.com/yenvanio/Hackathon-Finder/blob/master/search.gif" /> </td> 
+<td> <img src="https://github.com/yenvanio/HackathonFinder/blob/master/loadEventsFirst.gif" /> </td>
+<td> <img src="https://github.com/yenvanio/HackathonFinder/blob/master/event_detail_calendar.gif" /> </td> 
+<td> <img src="https://github.com/yenvanio/HackathonFinder/blob/master/search.gif" /> </td> 
 </tr> 
   
 <tr> 
@@ -20,8 +20,8 @@ Android App to display upcoming Hackathons in North America
 <td colspan="1" align = "center"> Sharing Hackathons </td>
 </tr>  
 <tr> 
-<td> <img src="https://github.com/yenvanio/Hackathon-Finder/blob/master/favourites_persist.gif" /> </td>
-<td> <img src="https://github.com/yenvanio/Hackathon-Finder/blob/master/share_event.gif" /> </td> 
+<td> <img src="https://github.com/yenvanio/HackathonFinder/blob/master/favourites_persist.gif" /> </td>
+<td> <img src="https://github.com/yenvanio/HackathonFinder/blob/master/share_event.gif" /> </td> 
 </tr> 
 
 
